@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:orientation="vertical">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/op"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:textColor="@color/textop"
+            android:textSize="35dp"
+            android:autoSizeMaxTextSize="30dp"
+            android:autoSizeMinTextSize="20dp"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/aff"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="right"
+
+            android:textColor="@color/light"
+            android:textSize="50dp"
+            android:autoSizeMinTextSize="30dp"
+            android:autoSizeMaxTextSize="50dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/dark"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/groupview">
+
+            <Button
+                style="@style/butoom"
+                android:background="@color/topbuttom"
+                android:text="Ac"
+                android:onClick="ac"/>
+
+            <Button
+                style="@style/butoom"
+                android:background="@color/topbuttom"
+                android:text="back"
+                android:onClick="back"/>
+
+            <Button
+                style="@style/butoom"
+                android:background="@color/topbuttom"
+                android:text="%"
+                android:onClick="poursont"/>
+
+
+            <Button
+                style="@style/butoom"
+                android:background="@color/buttomright"
+                android:text="/"
+                android:onClick="div"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/groupview">
+
+            <Button
+                style="@style/butoom"
+                android:text="7"
+                android:onClick="seven"/>
+
+            <Button
+                style="@style/butoom"
+                android:text="8"
+                android:onClick="eight"/>
+
+            <Button
+                style="@style/butoom"
+                android:text="9"
+                android:onClick="nine"/>
+
+            <Button
+                style="@style/butoom"
+                android:background="@color/buttomright"
+                android:text="X"
+                android:onClick="mult"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/groupview">
+
+            <Button
+                style="@style/butoom"
+                android:text="4"
+                android:onClick="four"/>
+
+            <Button
+                style="@style/butoom"
+                android:text="5"
+                android:onClick="five"/>
+
+            <Button
+                style="@style/butoom"
+                android:text="6"
+                android:onClick="six"/>
+
+            <Button
+                style="@style/butoom"
+                android:background="@color/buttomright"
+                android:text="-"
+                android:onClick="sour"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/groupview">
+
+            <Button
+                style="@style/butoom"
+                android:onClick="one"
+
+                android:text="1" />
+
+            <Button
+                style="@style/butoom"
+                android:text="2"
+                android:onClick="two"/>
+
+            <Button
+                style="@style/butoom"
+                android:text="3"
+                  android:onClick="three"/>
+
+            <Button
+                style="@style/butoom"
+                android:background="@color/buttomright"
+                android:text="+"
+                android:onClick="plus"/>
+        </LinearLayout>
+
+        <LinearLayout style="@style/groupview">
+
+            <Button
+                style="@style/butoom"
+
+                android:text="0"
+                android:onClick="zero"/>
+
+            <Button
+                style="@style/butoom"
+                android:text="-/+"
+                android:onClick="realnumbre"/>
+
+            <Button
+                style="@style/butoom"
+                android:text="."
+                android:onClick="piont"/>
+
+            <Button
+                style="@style/butoom"
+                android:background="@color/buttomright"
+                android:text="="
+                android:onClick="equle"/>
+        </LinearLayout>
+    </LinearLayout></LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
